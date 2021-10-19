@@ -48,6 +48,7 @@ class WordGuesserApp < Sinatra::Base
     else
       if not valid
         flash[:message] = "You have already used that letter."
+      end
     end
     redirect '/show'
   end
